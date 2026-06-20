@@ -2,9 +2,13 @@ export default function Footer(){
 
 return(
 
-<footer>
+<footer className="container">
 
-2026 Jett Kzalim Hotwar Store
+<hr/>
+
+<br/>
+
+Jett Kzalim Hotwar Store ©2026
 
 </footer>
 
