@@ -1,6 +1,6 @@
 /* ===== Product data: [name, category, icon, price, description, badge?] ===== */
 const products=[
-["Bot Chào Mừng Thành Viên","discord","👋","50k","Tự động chào mừng & gán role cho thành viên mới."],
+["Bot Discord theo yêu cầu","discord","👑","80k","Setup - Made theo yêu cầu."],
 ["Bot Auto-Reply FAQ","discord","💬","80k","Tự động trả lời câu hỏi thường gặp trong server.","HOT"],
 ["Bot Quản Lý Role","discord","🎛️","100k","Gán/gỡ role tự động theo điều kiện bạn đặt ra."],
 ["Bot Chống Spam & Raid","discord","🛡️","120k","Giám sát tin nhắn, tự động lọc spam và chặn raid."],
@@ -8,9 +8,9 @@ const products=[
 ["Bot Nhắc Lịch & Sự Kiện","discord","⏰","70k","Tự động nhắc lịch, đếm ngược sự kiện trong server."],
 ["Bot Thống Kê Hoạt Động","discord","📊","110k","Dashboard theo dõi hoạt động thành viên & kênh."],
 ["Tool Đăng Bài Tự Động","tool","🗓️","90k","Lên lịch & đăng bài tự động theo khung giờ."],
-["Tool Auto-Reply Fanpage","tool","📩","90k","Tự động trả lời tin nhắn fanpage qua API chính chủ."],
-["Source Code Bot Discord (JS)","file","📁","60k / 1","Mã nguồn bot Discord viết bằng Node.js, dễ tuỳ biến."],
-["Template Cấu Hình Server","file","🧩","50k / 1","Bộ cấu hình + trang trí kênh chuyên nghiệp."],
+["Tool Dame / TTC","tool","📩","50k","Dame - Tương tác chéo Facebook 🗒."],
+["Seftbot Pro V13","file","📁","200k / 1","Mã nguồn bot Discord viết bằng Node.js, dễ tuỳ biến."],
+["File - Tool","file","🧩","50k / 1","Tool - Bot - Files."],
 ["Gói Hosting Bot 24/7","tool","🌐","70k / tháng","Duy trì bot chạy ổn định, uptime 24/7."]
 ];
 
