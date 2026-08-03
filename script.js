@@ -8,9 +8,16 @@ const products=[
 ["Bot Nuke - Raid","discord","📊","50k","Phá hủy server."],
 ["Tool Discord & Spam","tool","️⚽","90k","Join + Spam."],
 ["Tool Dame / TTC","tool","📩","50k","Dame - Tương tác chéo Facebook 🗒."],
-["Seftbot Pro V13","file","📁","200k / 1","Mã nguồn bot Discord viết bằng Node.js, dễ tuỳ biến."],
+["Seftbot Pro V13","file","📁","200k","Mã nguồn bot Discord viết bằng Node.js, dễ tuỳ biến."],
 ["File - Tool","file","🧩","50k / 1","Tool - Bot - Files."],
-["Tool Scan Via","file","🍭","150k / 1","scan acc via."],
+["Tool Scan Via","file","🍭","150k","Scan acc via."],
+["Tool Reg Clone Facebook","file","💢","400k","Reg acc clone facebook."],
+["Tool Spam SMS","file","☃️","50k","Spam sms - call"],
+["Bot Marketing Zalo","file","⛈️","250k","Bot zalo auto"],
+["Bot Auto Dame FB Zl Dis v.v (Đt và PC)","discord","🔰","600k","Tut dame đa app."],
+["Tool War Các App + 35 App","file","✴️","300k","Tool war đa app."],
+["Tool Check Info FB TIK v.v IG","file","📖","100k","Check acc."],
+["Tool reg mail","file","🛑","150k","."],
 ["Gói Hosting Bot 24/7","tool","🌐","70k / tháng","Duy trì bot chạy ổn định, uptime 24/7."]
 ];
 
