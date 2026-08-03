@@ -10,6 +10,7 @@ const products=[
 ["Tool Dame / TTC","tool","📩","50k","Dame - Tương tác chéo Facebook 🗒."],
 ["Seftbot Pro V13","file","📁","200k / 1","Mã nguồn bot Discord viết bằng Node.js, dễ tuỳ biến."],
 ["File - Tool","file","🧩","50k / 1","Tool - Bot - Files."],
+["Tool Scan Via","file","🍭","150k / 1","scan acc via."],
 ["Gói Hosting Bot 24/7","tool","🌐","70k / tháng","Duy trì bot chạy ổn định, uptime 24/7."]
 ];
 
