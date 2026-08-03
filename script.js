@@ -17,7 +17,7 @@ const products=[
 ["Bot Auto Dame FB Zl Dis v.v (Đt và PC)","discord","🔰","600k","Tut dame đa app."],
 ["Tool War Các App + 35 App","file","✴️","300k","Tool war đa app."],
 ["Tool Check Info FB TIK v.v IG","file","📖","100k","Check acc."],
-["Tool reg mail","file","🛑","150k","."],
+["Tool reg mail","file","🛑","150k","Reg mail."],
 ["Gói Hosting Bot 24/7","tool","🌐","70k / tháng","Duy trì bot chạy ổn định, uptime 24/7."]
 ];
 
