@@ -1,4 +1,4 @@
-  /* ===== Product data: [name, category, icon, price, description, badge?] ===== */
+/* ===== Product data: [name, category, icon, price, description, badge?] ===== */
 const products=[
 ["Bot Discord theo yêu cầu","discord","👑","80k","Setup - Made theo yêu cầu.", "HOT"],
 ["Bot Quản Lý Role","discord","🎛️","100k","Gán/gỡ role tự động theo điều kiện bạn đặt ra."],
