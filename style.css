@@ -213,3 +213,138 @@ footer span:first-child{color:#ddd;font-weight:900}
   .stats{gap:20px}
   footer{flex-direction:column;gap:10px}
 }
+
+
+/* =========================================================
+   KZALIM STORE — INTRO SHOP
+   ========================================================= */
+
+.intro-action {
+  width: 100%;
+  display: flex;
+  justify-content: center;
+  margin: 14px 0 0;
+}
+
+.intro-btn {
+  appearance: none;
+  border: 1px solid rgba(255,255,255,.14);
+  background: rgba(255,255,255,.045);
+  color: #fff;
+  padding: 14px 28px;
+  min-height: 48px;
+  border-radius: 14px;
+  font: inherit;
+  font-weight: 800;
+  cursor: pointer;
+  backdrop-filter: blur(16px);
+  -webkit-backdrop-filter: blur(16px);
+  transition: transform .25s ease, background .25s ease,
+              border-color .25s ease, box-shadow .25s ease;
+}
+
+.intro-btn:hover {
+  transform: translateY(-3px);
+  background: rgba(255,255,255,.09);
+  border-color: rgba(150,100,255,.7);
+  box-shadow: 0 14px 40px rgba(100,70,255,.20);
+}
+
+.intro-btn:active {
+  transform: translateY(-1px);
+}
+
+.shop-intro {
+  width: min(1200px, calc(100% - 32px));
+  margin: 100px auto 110px;
+  scroll-margin-top: 40px;
+}
+
+.intro-heading {
+  text-align: center;
+  margin-bottom: 28px;
+}
+
+.intro-label {
+  display: inline-block;
+  font-size: 12px;
+  font-weight: 900;
+  letter-spacing: 3px;
+  opacity: .62;
+  margin-bottom: 10px;
+}
+
+.intro-heading h2 {
+  margin: 0;
+  font-size: clamp(32px, 5vw, 58px);
+  line-height: 1;
+  font-weight: 900;
+  letter-spacing: -2px;
+}
+
+.intro-heading p {
+  margin: 12px 0 0;
+  opacity: .55;
+  font-size: 15px;
+}
+
+.intro-video-wrapper {
+  position: relative;
+  width: 100%;
+  aspect-ratio: 21 / 9;
+  overflow: hidden;
+  border-radius: 26px;
+  background: #08080d;
+  border: 1px solid rgba(255,255,255,.11);
+  box-shadow:
+    0 30px 100px rgba(0,0,0,.52),
+    0 0 70px rgba(100,70,255,.10);
+}
+
+.intro-video {
+  width: 100%;
+  height: 100%;
+  display: block;
+  object-fit: cover;
+}
+
+.intro-overlay {
+  position: absolute;
+  inset: 0;
+  pointer-events: none;
+  display: flex;
+  align-items: flex-end;
+  padding: 28px;
+  background: linear-gradient(to top, rgba(0,0,0,.62), transparent 45%);
+}
+
+.intro-overlay span {
+  font-size: 14px;
+  font-weight: 900;
+  letter-spacing: 4px;
+  color: rgba(255,255,255,.82);
+}
+
+@media (max-width: 700px) {
+  .intro-action {
+    margin-top: 12px;
+  }
+
+  .intro-btn {
+    width: min(100%, 420px);
+  }
+
+  .shop-intro {
+    width: calc(100% - 22px);
+    margin-top: 70px;
+  }
+
+  .intro-video-wrapper {
+    aspect-ratio: 16 / 10;
+    border-radius: 18px;
+  }
+
+  .intro-overlay {
+    padding: 18px;
+  }
+}
