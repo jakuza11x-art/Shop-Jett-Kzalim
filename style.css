@@ -216,14 +216,15 @@ footer span:first-child{color:#ddd;font-weight:900}
 
 
 /* =========================================================
-   KZALIM STORE — INTRO SHOP
+   KZALIM STORE — INTRO SHOP — CENTER FIX
    ========================================================= */
 
 .intro-action {
   width: 100%;
   display: flex;
   justify-content: center;
-  margin: 14px 0 0;
+  align-items: center;
+  margin: 14px auto 0;
 }
 
 .intro-btn {
@@ -237,95 +238,221 @@ footer span:first-child{color:#ddd;font-weight:900}
   font: inherit;
   font-weight: 800;
   cursor: pointer;
+
   backdrop-filter: blur(16px);
   -webkit-backdrop-filter: blur(16px);
-  transition: transform .25s ease, background .25s ease,
-              border-color .25s ease, box-shadow .25s ease;
+
+  transition:
+    transform .25s ease,
+    background .25s ease,
+    border-color .25s ease,
+    box-shadow .25s ease;
 }
 
 .intro-btn:hover {
   transform: translateY(-3px);
   background: rgba(255,255,255,.09);
   border-color: rgba(150,100,255,.7);
-  box-shadow: 0 14px 40px rgba(100,70,255,.20);
+
+  box-shadow:
+    0 14px 40px rgba(100,70,255,.20);
 }
 
 .intro-btn:active {
   transform: translateY(-1px);
 }
 
+
+/* =========================================================
+   INTRO SECTION
+   ========================================================= */
+
 .shop-intro {
-  width: min(1200px, calc(100% - 32px));
-  margin: 100px auto 110px;
+  width: min(1200px, calc(100% - 32px)) !important;
+  max-width: 1200px !important;
+
+  margin: 100px auto 110px !important;
+
+  padding: 0 !important;
+
+  display: block !important;
+
+  position: relative;
+
+  left: auto !important;
+  right: auto !important;
+
+  transform: none !important;
+
   scroll-margin-top: 40px;
+
+  box-sizing: border-box;
 }
 
+
+/* =========================================================
+   INTRO TITLE
+   ========================================================= */
+
 .intro-heading {
-  text-align: center;
-  margin-bottom: 28px;
+  width: 100% !important;
+
+  display: flex !important;
+  flex-direction: column;
+  align-items: center !important;
+
+  text-align: center !important;
+
+  margin: 0 auto 28px !important;
+  padding: 0 !important;
+
+  box-sizing: border-box;
 }
 
 .intro-label {
   display: inline-block;
+
   font-size: 12px;
   font-weight: 900;
+
   letter-spacing: 3px;
+
   opacity: .62;
-  margin-bottom: 10px;
+
+  margin: 0 0 10px;
 }
 
 .intro-heading h2 {
+  width: 100%;
+
   margin: 0;
+
+  text-align: center;
+
   font-size: clamp(32px, 5vw, 58px);
+
   line-height: 1;
+
   font-weight: 900;
+
   letter-spacing: -2px;
 }
 
 .intro-heading p {
+  width: 100%;
+
   margin: 12px 0 0;
+
+  text-align: center;
+
   opacity: .55;
+
   font-size: 15px;
 }
 
+
+/* =========================================================
+   VIDEO
+   ========================================================= */
+
 .intro-video-wrapper {
   position: relative;
-  width: 100%;
+
+  width: 100% !important;
+  max-width: 1200px !important;
+
+  height: auto;
+
+  margin: 0 auto !important;
+  padding: 0 !important;
+
+  display: block !important;
+
+  left: auto !important;
+  right: auto !important;
+
+  transform: none !important;
+
   aspect-ratio: 21 / 9;
+
   overflow: hidden;
+
   border-radius: 26px;
+
   background: #08080d;
+
   border: 1px solid rgba(255,255,255,.11);
+
   box-shadow:
     0 30px 100px rgba(0,0,0,.52),
     0 0 70px rgba(100,70,255,.10);
+
+  box-sizing: border-box;
 }
 
 .intro-video {
-  width: 100%;
-  height: 100%;
+  width: 100% !important;
+  height: 100% !important;
+
   display: block;
+
+  margin: 0;
+
   object-fit: cover;
+
+  object-position: center center;
 }
+
+
+/* =========================================================
+   VIDEO OVERLAY
+   ========================================================= */
 
 .intro-overlay {
   position: absolute;
+
   inset: 0;
+
+  width: 100%;
+  height: 100%;
+
   pointer-events: none;
+
   display: flex;
+
   align-items: flex-end;
+
+  justify-content: flex-start;
+
   padding: 28px;
-  background: linear-gradient(to top, rgba(0,0,0,.62), transparent 45%);
+
+  box-sizing: border-box;
+
+  background:
+    linear-gradient(
+      to top,
+      rgba(0,0,0,.62),
+      transparent 45%
+    );
 }
 
 .intro-overlay span {
   font-size: 14px;
+
   font-weight: 900;
+
   letter-spacing: 4px;
+
   color: rgba(255,255,255,.82);
 }
 
+
+/* =========================================================
+   MOBILE
+   ========================================================= */
+
 @media (max-width: 700px) {
+
   .intro-action {
     margin-top: 12px;
   }
@@ -335,16 +462,39 @@ footer span:first-child{color:#ddd;font-weight:900}
   }
 
   .shop-intro {
-    width: calc(100% - 22px);
-    margin-top: 70px;
+    width: calc(100% - 22px) !important;
+
+    max-width: none !important;
+
+    margin: 70px auto 80px !important;
+
+    padding: 0 !important;
+  }
+
+  .intro-heading {
+    width: 100% !important;
+
+    margin-left: auto !important;
+    margin-right: auto !important;
+  }
+
+  .intro-heading h2 {
+    font-size: clamp(30px, 10vw, 46px);
   }
 
   .intro-video-wrapper {
+    width: 100% !important;
+
     aspect-ratio: 16 / 10;
+
     border-radius: 18px;
+
+    margin-left: auto !important;
+    margin-right: auto !important;
   }
 
   .intro-overlay {
     padding: 18px;
   }
+
 }
