@@ -39,6 +39,13 @@
         <button class="primary" onclick="scrollToId('products')">Khám phá sản phẩm <b>↓</b></button>
         <a class="secondary" href="https://discord.gg/t7AmnA59dq" target="_blank" rel="noopener">💬 Discord hỗ trợ</a>
       </div>
+    <div class="intro-action">
+      <button class="intro-btn" type="button"
+        onclick="document.getElementById('shop-intro')?.scrollIntoView({behavior:'smooth', block:'start'})">
+        🎬 Xem Intro Shop ↓
+      </button>
+    </div>
+
       <div class="stats">
         <div><b>12+</b><span>Bot &amp; Tool</span></div>
         <div><b>24/7</b><span>Uptime hỗ trợ</span></div>
@@ -49,6 +56,25 @@
       <div class="orb">🦈</div>
       <div class="hero-card-top"><span>● ONLINE</span><small>Kzalim Bots</small></div>
       <div class="hero-card-bottom"><strong>Automation<br>Suite v2</strong><span>↗</span></div>
+    </div>
+  </div>
+</section>
+
+
+<section id="shop-intro" class="shop-intro">
+  <div class="intro-heading">
+    <span class="intro-label">✦ KZALIM STORE</span>
+    <h2>INTRO SHOP</h2>
+    <p>Khám phá thế giới của KZALIM STORE</p>
+  </div>
+
+  <div class="intro-video-wrapper">
+    <video class="intro-video" autoplay muted loop playsinline preload="metadata">
+      <source src="assets/intro-anime.mp4" type="video/mp4">
+      Trình duyệt của bạn không hỗ trợ video.
+    </video>
+    <div class="intro-overlay">
+      <span>KZALIM STORE</span>
     </div>
   </div>
 </section>
@@ -116,3 +142,4 @@
 <script src="script.js"></script>
 </body>
 </html>
+
