@@ -300,7 +300,13 @@ function scrollToId(id) {
     block: "start"
   });
 }
-
+/* ===== Intro Shop smooth scroll ===== */
+function scrollToIntro() {
+  document.getElementById("shop-intro")?.scrollIntoView({
+    behavior: "smooth",
+    block: "start"
+  });
+}
 /* ===== Close modal by clicking outside / Escape ===== */
 function setupModalEvents() {
   const overlay = document.getElementById("authOverlay");
