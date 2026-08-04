@@ -18,7 +18,7 @@ const products=[
 ["Tool War Các App + 35 App","file","✴️","300k","Tool war đa app."],
 ["Tool Check Info FB TIK v.v IG","file","📖","100k","Check acc."],
 ["Tool reg mail","file","🛑","150k","Reg mail."],
-["Bot auto dame - zl mess dis.","file","🎭","1tr","Bot dame đa app."]
+["Bot auto dame - zl mess dis.","file","🎭","1tr","Bot dame đa app."],
 ["Gói Hosting Bot 24/7","tool","🌐","70k / tháng","Duy trì bot chạy ổn định, uptime 24/7."]
 ];
 
