@@ -216,111 +216,89 @@ footer span:first-child{color:#ddd;font-weight:900}
 
 
 /* =========================================================
-   KZALIM STORE — INTRO SHOP — CENTER FIX
+   KZALIM STORE — INTRO SHOP
+   FIX CENTER TO FULL SCREEN
    ========================================================= */
 
+/* Nút Intro */
 .intro-action {
   width: 100%;
   display: flex;
   justify-content: center;
   align-items: center;
-  margin: 14px auto 0;
-}
-
-.intro-btn {
-  appearance: none;
-  border: 1px solid rgba(255,255,255,.14);
-  background: rgba(255,255,255,.045);
-  color: #fff;
-  padding: 14px 28px;
-  min-height: 48px;
-  border-radius: 14px;
-  font: inherit;
-  font-weight: 800;
-  cursor: pointer;
-
-  backdrop-filter: blur(16px);
-  -webkit-backdrop-filter: blur(16px);
-
-  transition:
-    transform .25s ease,
-    background .25s ease,
-    border-color .25s ease,
-    box-shadow .25s ease;
-}
-
-.intro-btn:hover {
-  transform: translateY(-3px);
-  background: rgba(255,255,255,.09);
-  border-color: rgba(150,100,255,.7);
-
-  box-shadow:
-    0 14px 40px rgba(100,70,255,.20);
-}
-
-.intro-btn:active {
-  transform: translateY(-1px);
+  margin: 16px auto 0;
 }
 
 
 /* =========================================================
-   INTRO SECTION
+   INTRO — THOÁT KHỎI CONTAINER BỊ LỆCH
    ========================================================= */
 
 .shop-intro {
-  width: min(1200px, calc(100% - 32px)) !important;
-  max-width: 1200px !important;
+  /* Quan trọng nhất */
+  width: 100vw !important;
+  max-width: none !important;
 
-  margin: 100px auto 110px !important;
+  /* Đưa section ra giữa viewport */
+  position: relative !important;
+  left: auto !important;
+  right: auto !important;
+
+  /* Thoát khỏi parent đang lệch */
+  margin-left: calc(50% - 50vw) !important;
+  margin-right: 0 !important;
+
+  margin-top: 100px !important;
+  margin-bottom: 110px !important;
 
   padding: 0 !important;
 
   display: block !important;
 
-  position: relative;
-
-  left: auto !important;
-  right: auto !important;
-
-  transform: none !important;
+  box-sizing: border-box;
 
   scroll-margin-top: 40px;
-
-  box-sizing: border-box;
 }
 
 
 /* =========================================================
-   INTRO TITLE
+   TIÊU ĐỀ INTRO
    ========================================================= */
 
 .intro-heading {
-  width: 100% !important;
+  width: min(1200px, calc(100vw - 32px)) !important;
+  max-width: 1200px !important;
+
+  margin: 0 auto 30px !important;
+  padding: 0 !important;
 
   display: flex !important;
-  flex-direction: column;
+  flex-direction: column !important;
+
   align-items: center !important;
+  justify-content: center !important;
 
   text-align: center !important;
-
-  margin: 0 auto 28px !important;
-  padding: 0 !important;
 
   box-sizing: border-box;
 }
 
+
 .intro-label {
-  display: inline-block;
+  display: block;
+
+  margin: 0 0 12px;
+
+  text-align: center;
 
   font-size: 12px;
   font-weight: 900;
 
   letter-spacing: 3px;
 
-  opacity: .62;
-
-  margin: 0 0 10px;
+  opacity: .65;
 }
+
 
 .intro-heading h2 {
   width: 100%;
@@ -329,7 +307,7 @@ footer span:first-child{color:#ddd;font-weight:900}
 
   text-align: center;
 
-  font-size: clamp(32px, 5vw, 58px);
+  font-size: clamp(34px, 5vw, 60px);
 
   line-height: 1;
 
@@ -338,27 +316,28 @@ footer span:first-child{color:#ddd;font-weight:900}
   letter-spacing: -2px;
 }
 
+
 .intro-heading p {
   width: 100%;
 
-  margin: 12px 0 0;
+  margin: 14px 0 0;
 
   text-align: center;
 
-  opacity: .55;
-
   font-size: 15px;
+
+  opacity: .55;
 }
 
 
 /* =========================================================
-   VIDEO
+   VIDEO — CĂN GIỮA TOÀN MÀN HÌNH
    ========================================================= */
 
 .intro-video-wrapper {
-  position: relative;
+  position: relative !important;
 
-  width: 100% !important;
+  width: min(1200px, calc(100vw - 32px)) !important;
   max-width: 1200px !important;
 
   height: auto;
@@ -385,27 +364,29 @@ footer span:first-child{color:#ddd;font-weight:900}
 
   box-shadow:
     0 30px 100px rgba(0,0,0,.52),
-    0 0 70px rgba(100,70,255,.10);
+    0 0 70px rgba(100,70,255,.12);
 
   box-sizing: border-box;
 }
 
+
+/* VIDEO */
 .intro-video {
   width: 100% !important;
   height: 100% !important;
 
-  display: block;
+  display: block !important;
 
-  margin: 0;
+  margin: 0 !important;
+  padding: 0 !important;
 
-  object-fit: cover;
-
-  object-position: center center;
+  object-fit: cover !important;
+  object-position: center center !important;
 }
 
 
 /* =========================================================
-   VIDEO OVERLAY
+   OVERLAY
    ========================================================= */
 
 .intro-overlay {
@@ -421,7 +402,6 @@ footer span:first-child{color:#ddd;font-weight:900}
   display: flex;
 
   align-items: flex-end;
-
   justify-content: flex-start;
 
   padding: 28px;
@@ -431,10 +411,11 @@ footer span:first-child{color:#ddd;font-weight:900}
   background:
     linear-gradient(
       to top,
-      rgba(0,0,0,.62),
-      transparent 45%
+      rgba(0,0,0,.65),
+      transparent 48%
     );
 }
+
 
 .intro-overlay span {
   font-size: 14px;
@@ -443,7 +424,7 @@ footer span:first-child{color:#ddd;font-weight:900}
 
   letter-spacing: 4px;
 
-  color: rgba(255,255,255,.82);
+  color: rgba(255,255,255,.85);
 }
 
 
@@ -453,37 +434,32 @@ footer span:first-child{color:#ddd;font-weight:900}
 
 @media (max-width: 700px) {
 
-  .intro-action {
-    margin-top: 12px;
-  }
-
-  .intro-btn {
-    width: min(100%, 420px);
-  }
-
   .shop-intro {
-    width: calc(100% - 22px) !important;
+    width: 100vw !important;
 
-    max-width: none !important;
+    margin-left: calc(50% - 50vw) !important;
+    margin-right: 0 !important;
 
-    margin: 70px auto 80px !important;
-
-    padding: 0 !important;
+    margin-top: 70px !important;
+    margin-bottom: 80px !important;
   }
+
 
   .intro-heading {
-    width: 100% !important;
+    width: calc(100vw - 22px) !important;
 
     margin-left: auto !important;
     margin-right: auto !important;
   }
 
+
   .intro-heading h2 {
     font-size: clamp(30px, 10vw, 46px);
   }
 
+
   .intro-video-wrapper {
-    width: 100% !important;
+    width: calc(100vw - 22px) !important;
 
     aspect-ratio: 16 / 10;
 
@@ -492,6 +468,7 @@ footer span:first-child{color:#ddd;font-weight:900}
     margin-left: auto !important;
     margin-right: auto !important;
   }
+
 
   .intro-overlay {
     padding: 18px;
